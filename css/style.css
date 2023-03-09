@@ -1,0 +1,662 @@
+/* Start Global Rules */
+:root {
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-header: #434344;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+} 
+input:focus {
+    outline: none;
+}
+/* End Global Rules */
+
+/* Start Header */
+header {
+    background-color: var(--bs-header);
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    z-index: 888;
+    top: 0;
+}
+header nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 60%;
+    height: 75px;
+    margin: 0 auto;
+}
+header nav .boxs {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+header nav a {
+    color: var(--bs-gray);
+    letter-spacing: 1pxs;
+    transition: 0.3s;
+}
+header nav a:hover {
+    color: var(--bs-light);
+}
+header .logo {
+    font-size: 26px;
+}
+header nav {
+    position: relative;
+}
+header .all a {
+    display: block;
+    margin-bottom: 15px;
+    color: var(--bs-light);
+    transition: 0.3s;
+}
+header .all a:hover {
+    color: var(--bs-blue);
+    padding-left: 5px;
+}
+header .all {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 60px;
+    background-color: var(--bs-header);
+    width: 100000%;
+    left: -310px;
+    padding-left: 350px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+header .container:hover .all {
+    display: block;
+}
+header .store:hover .one {
+    display: flex;
+    gap: 100px;
+}
+header .all h4 {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    color: var(--bs-gray);
+}
+header .icon {
+    display: flex;
+    gap: 20px;
+}
+.bar-icon {
+    display: none;
+}
+nav:hover .boxs {
+    display: flex;
+}
+
+@media (max-width: 991px) {
+    header nav .boxs {
+        position: absolute;
+        flex-direction: column;
+        left: 0;
+        top: 75px;
+        background-color: var(--bs-header);
+        height: 100vh;
+        width: 100%;
+        align-items: flex-start;
+        padding-left: 30px;
+        display: none;
+    }
+    .bar-icon {
+        display: block;
+    }
+    header nav {
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 30px;
+    }
+    header .container:hover .all {
+        display: block;
+        top: 0;
+        height: 100vh;
+    }
+    header .store .box-2 {
+        margin-top: 30px;
+    }
+    .title-1 {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: inherit !important;
+        line-height: 1.5;
+    }
+}
+
+
+/* End Header */
+
+.title-1 {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: var(--bs-gray);
+}
+.title-1 i {
+    font-size: 12px;
+    color: var(--bs-blue);
+}
+.title-1 a {
+    font-size: 14px;
+    color: var(--bs-blue);
+    transition: 0.3s;
+}
+.title-1 a:hover {
+    text-decoration: underline;
+}
+
+/* Start iPone 14 */
+.iphone-14 {
+    background-image: url(../img/hero_iphone14_yellow_preorder__9y5sfdg5m5eu_mediumtall.jpg);
+    background-position: center;
+    background-size: 1078px 698px;
+    height: 590px;
+    position: relative;
+}
+.iphone-14 .content {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.iphone-14 .iphone {
+    font-size: 40px;
+    color: #000;
+    transition: 0.3s;
+    display: block;
+    margin-bottom: 10px;
+}
+.iphone-14 .iphone:hover {
+    color: var(--bs-primary);
+}
+.iphone-14 .p-1 {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 20px;
+    color: var(--bs-dark);
+    cursor: pointer;
+}
+.iphone-14 .p-2,
+.iphone-14 .p-3 {
+    margin-bottom: 10px;
+    color: var(--bs-gray);
+    cursor: pointer;
+}
+.iphone-14 .link {
+    display: flex;
+    justify-content: space-between;
+}
+.iphone-14 .link span a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--bs-blue);
+    transition: 0.3s;
+}
+.iphone-14 .link span a:hover {
+    text-decoration: underline;
+}
+.iphone-14 .link span i {
+    font-size: 12px;
+    color: var(--bs-blue);
+}
+@media (max-width: 767px) {
+    .iphone-14 .content {
+        transform: none;
+        left: 0;
+        padding: 0 10px;
+        width: 100%;
+    }
+    .iphone-14 {
+        background-size: 600px 698px;
+        height: 660px;
+    }
+    .iphone-14 .link {
+        justify-content: space-around;
+        margin: 15px auto 0;
+    }
+}
+/* End iPone 14 */
+
+
+/* Start IPhone 14 Pro */
+.iphone-pro {
+    background-color: #000;
+    color: var(--bs-light);
+    margin-top: 20px;
+}
+.iphone-pro .img {
+    text-align: center;
+}
+.iphone-pro .img img {
+    height: 400px;
+}
+.iphone-pro .about {
+    text-align: center;
+    padding: 30px 0 100px;
+}
+.iphone-pro .about .name {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 40px;
+    color: var(--bs-light);
+}
+.iphone-pro .about p {
+    margin-bottom: 15px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.iphone-pro .link {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 0 auto;
+}
+.iphone-pro .link span a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--bs-blue);
+    transition: 0.3s;
+}
+.iphone-pro .link span a:hover {
+    text-decoration: underline;
+}
+.iphone-pro .link span i {
+    font-size: 12px;
+    color: var(--bs-blue);
+}
+
+@media (max-width: 767px) {
+    .iphone-pro .img img {
+        width: 80%;
+        height: auto;
+    }
+    .iphone-pro .link {
+        width: 100%;
+    }
+    .iphone-pro .about {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .iphone-pro .about p {
+        font-size: 24px;
+    }
+    .iphone-pro .about .name {
+        font-size: 36px;
+    }
+}
+/* End IPhone 14 Pro */
+
+/* Start Watch */
+.watch-1 {
+    background-color: #000;
+    margin-top: 20px;
+}
+.watch-1 .about {
+    text-align: center;
+    color: var(--bs-light);
+}
+.watch-1 h1 {
+    margin: 0;
+    padding-top: 50px;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.watch-1 h1 a {
+    color: var(--bs-light);
+}
+.watch-1 .version {
+    text-transform: uppercase;
+    color: var(--bs-red);
+    font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.watch-1 h3 {
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.watch-1 .link {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 0 auto;
+}
+.watch-1 .link span a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--bs-blue);
+    transition: 0.3s;
+}
+.watch-1 .link span a:hover {
+    text-decoration: underline;
+}
+.watch-1 .link span i {
+    font-size: 12px;
+    color: var(--bs-blue);
+}
+.watch-1 .img {
+    background-image: url(../img/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_large.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .watch-1 .link {
+        width: 100%;
+    }
+}
+/* End Watch */
+
+
+/* Start Grid */
+.grid .link {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.grid .link span a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--bs-blue);
+    transition: 0.3s;
+}
+.grid .link span a:hover {
+    text-decoration: underline;
+}
+.grid .link span i {
+    font-size: 12px;
+    color: var(--bs-blue);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 40px 20px;
+    margin-top: 10px;
+}
+.grid .box {
+    padding: 20px 0 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.grid .box h4 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.grid .box h5 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.grid .ipad .background {
+    background-image: url(../img/promo_ipad__fioegapg12qi_large.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 420px;
+    cursor: pointer;
+}
+.grid .ipad {
+    background-color: #fbfbfb;
+    width: 100%;
+}
+.grid .ipad .link span a,
+.grid .ipad .link span i {
+    color: var(--bs-dark);
+}
+
+.grid .mac .background {
+    background-image: url(../img/promo_mbp__ek7p477bkp6q_large.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 420px;
+    cursor: pointer;
+}
+.grid .mac {
+    background-color: #000;
+    width: 100%;
+}
+.grid .mac h4,
+.grid .mac h5 {
+    color: var(--bs-light);
+}
+.grid .home .background {
+    background-image: url(../img/promo_homepod__f7jnolq94m2y_large.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 420px;
+    cursor: pointer;
+}
+.grid .home {
+    background-color: #000;
+    width: 100%;
+}
+.grid .home h4,
+.grid .home h5 {
+    color: var(--bs-light);
+}
+.grid .airpods .background {
+    background-image: url(../img/promo_airpods_pro_avail__gaxggskofx6y_large.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 420px;
+    cursor: pointer;
+}
+.grid .airpods {
+    background-color: #000000;
+    width: 100%;
+}
+.grid .airpods h4,
+.grid .airpods h5 {
+    color: var(--bs-light);
+}
+.grid .fit .background {
+    background-image: url(../img/promo-apple-fitness-plus-iphone__bzeal882mv7m_large.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 420px;
+    cursor: pointer;
+}
+.grid .fit {
+    background-color: #f5f5f7;
+    width: 100%;
+}
+.grid .card .background {
+    background-image: url(../img/tile__cauwwcyyn9hy_large.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 420px;
+    cursor: pointer;
+}
+.grid .card {
+    background-color: #fbfbfd;
+    width: 100%;
+}
+@media (max-width: 767px) {
+    .grid {
+        grid-template-columns: minmax(250px, 1fr);
+        row-gap: 15px;
+    }
+    .owener .img {
+        width: 100% !important;
+    }
+}
+/* End Grid */
+
+/* Start Owener */
+.owener .img {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eee;
+}
+.owener .img img {
+    width: 100%;
+}
+.owener {
+    margin-top: 15px;
+}
+/* End Owener */
+
+
+/* Start Other Link */
+.other {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+.other .two {
+    margin-top: 20px;
+}
+.other .box a{
+    margin-top: 10px;
+    color: var(--bs-gray);
+    display: block;
+    transition: 0.5s;
+    font-size: 14px;
+}
+.other .box a:hover {
+    text-decoration: underline;
+    padding-left: 5px;
+    color: var(--bs-purple);
+}
+.other .box {
+    position: relative;
+}
+.other .box {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+@media (max-width: 767px) {
+    .other .box:hover ul {
+        display: block;
+    }
+    .other .box ul {
+        display: none;
+        transition: 0.5s;
+    }
+
+    .other {
+        grid-template-columns: minmax(200px , 1fr);
+    }
+}
+
+
+/* End Other Link */
+
+
+.foot {
+    margin: 50px auto 0;
+    width: 80%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.foot p {
+    color: var(--bs-gray);
+    font-size: 12px;
+    line-height: 1.7;
+}
+.foot p a {
+    font-size: 12px;
+    color: var(--bs-blue);
+    text-decoration: underline;
+}
+
+/* Start Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 30px auto 20px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+footer ul li:not(:last-child) {
+    border-right: 1px solid;
+    padding-right: 10px;
+}
+footer ul {
+    display: flex;
+    gap: 20px;
+}
+footer p {
+    color: var(--bs-gray);
+    font-size: 12px;
+    line-height: 1.7;
+}
+footer a {
+    font-size: 12px;
+    color: var(--bs-gray);
+    transition: 0.5s;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: var(--bs-purple);
+}
+
+@media (max-width: 991px) {
+    footer,
+    footer ul {
+        flex-direction: column;
+    }
+    footer ul {
+        margin: 20px 0;
+    }
+    footer ul li:not(:last-child) {
+        border-right: none !important;
+    }
+}
+/* End Footer */
